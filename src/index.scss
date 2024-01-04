@@ -1,0 +1,246 @@
+@use "sass:math";
+
+// Variables
+
+$body-bg: #1b0224;
+$comp-padding: 10%;
+$comp-padding-bottom: 2%;
+$body-font: "Fira Code Variable";
+$card-border: 2px solid #41104F;
+$card-sub-border: 0.7px solid #ABB2BF;
+
+@mixin button($padding-y, $padding-x) {
+border: $card-border;
+box-shadow: 4px 2px 2px 0px rgba(178, 60, 208, 0.25);
+padding: $padding-y $padding-x;
+margin: 0 1rem;
+background: transparent;
+color:white;
+font-family: $body-font, sans-serif;
+
+span{
+  color: #c778dd;
+}
+}
+
+@mixin sub-heading($sub-heading-font:24px){
+  display: flex;
+    align-items: center;
+    h2{
+      font-size: $sub-heading-font;
+      padding-bottom: $comp-padding-bottom;
+    }
+}
+
+@mixin heading($divider) {
+  padding: math.div($comp-padding, $divider);
+  padding-left: 10%;
+  color: white;
+  span{
+    color: #c778dd;
+  }
+}
+
+a{
+  color: inherit;
+}
+
+body{
+  font-family: $body-font, sans-serif;
+  margin: 0;
+  background-color: $body-bg;
+  padding: 3rem;
+  @media screen and (max-width:767px)  {
+    padding: 0.5rem;
+  }
+}
+
+// Button CSS
+
+.btn, .title{
+  @include button(1.25rem, 2rem);
+  @media screen and (max-width:767px) {
+    @include button(0.5rem, 0.8rem);
+    margin: 0.5rem;
+  }
+}
+
+.btn-clicked{
+  @extend .btn;
+  background-color:white;
+  color: #41104F;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+// Navbar CSS
+
+.navbar{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+  div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width:767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media screen and (max-width:767px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+// Intro Section CSS
+
+#Intro{
+  padding: $comp-padding;
+  padding-bottom: $comp-padding-bottom ;
+  img{
+    margin-left: 70%;
+    margin-top: -5%;
+    @media screen and (max-width:767px) {
+      display: none;
+    }
+  }
+  .name{
+    width: 50%;
+    color: white;
+    span{
+      color: #c778dd;
+    }
+    @media screen and (max-width:767px) {
+      width: 100%;
+    }
+  }
+  .summary{
+    color: rgb(196, 196, 196);
+    width: 50%;
+    line-height: 1.5rem;
+    @media screen and (max-width:767px) {
+      width: 100%;
+    }
+  }
+  
+}
+
+// Skills Section CSS
+
+#skills{
+  @include heading(2);
+  img{
+    @media screen and (max-width:767px) {
+      display: none ;
+    }
+  }
+  .sub-heading {
+    @include sub-heading;
+  }
+}
+
+.skill-card{
+  border: $card-border;
+  width: fit-content;
+  padding: 0.5dvw;
+  margin: 16px;
+  @media screen and (max-width:767px) {
+    margin: 8px;
+    width: fit-content;
+    height: auto;
+    font-size: 14px;
+  }
+  h3{
+    border-bottom: $card-sub-border;
+    font-size: 16px;
+  }
+  p{
+    color: rgb(175, 175, 175);
+    @media screen and (max-width:767px) {
+      font-size: medium;
+    }
+  }
+}
+
+.skillscontainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 12%;
+  @media screen and (max-width:767px) {
+    margin:auto;
+  }
+  
+}
+
+.skillscontainerwithIllust{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @media screen and (max-width:767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+// Projects section CSS
+
+#projects{
+  @include heading(2);
+  .sub-heading{
+    @include sub-heading;
+  }
+
+  @mixin projbutton($border-width){
+    padding: 8px 16px;
+    border: $border-width solid #41104F;
+    background: transparent;
+    margin: 4px 6px;
+    color: white;
+  }
+
+  button:nth-child(odd){
+    @include projbutton(1px);
+  }
+
+  button:nth-child(even){
+    @include projbutton(2px);
+  }
+
+}
+
+.project-card{
+  border: $card-border;
+  margin: 12px;
+  padding: 1dvw;
+  width: 45%;
+  @media screen and (max-width:767px) {
+    width: 100%;
+    margin: 6px auto;
+    font-size: 14px;
+    img{
+      width: 80dvw;
+    }
+  }
+}
+
+.projcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width:767px) {
+    margin: auto;
+  }
+}
+
+// Small Projects
+
+#small-projects{
+  @include heading(3);
+  .sub-heading{
+    @include sub-heading(20px);
+  }
+}
