@@ -2,8 +2,8 @@
 
 // Variables
 
-$body-bg: #1b0224;
 $comp-padding: 10%;
+$body-bg: #1b0224;
 $comp-padding-bottom: 2%;
 $body-font: "Fira Code Variable";
 $card-border: 2px solid #41104F;
@@ -17,10 +17,22 @@ margin: 0 1rem;
 background: transparent;
 color:white;
 font-family: $body-font, sans-serif;
-
+cursor: pointer;
 span{
   color: #c778dd;
 }
+}
+
+@mixin projbutton($border-width){
+  padding: 8px 16px;
+  border: $border-width solid #41104F;
+  background: transparent;
+  margin: 4px 6px;
+  color: white;
+  cursor: pointer;
+  &:hover{
+    background-color: #c778dd6a;
+  }
 }
 
 @mixin sub-heading($sub-heading-font:24px){
@@ -65,14 +77,6 @@ body{
   }
 }
 
-.btn-clicked{
-  @extend .btn;
-  background-color:white;
-  color: #41104F;
-  font-weight: 600;
-  box-shadow: none;
-}
-
 // Navbar CSS
 
 .navbar{
@@ -89,10 +93,14 @@ body{
       align-items: flex-start;
     }
   }
-
   @media screen and (max-width:767px) {
     flex-direction: column;
     align-items: flex-start;
+    .nav-buttons{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -194,22 +202,13 @@ body{
   .sub-heading{
     @include sub-heading;
   }
+    button:nth-child(odd){
+      @include projbutton(1px);
+    }
 
-  @mixin projbutton($border-width){
-    padding: 8px 16px;
-    border: $border-width solid #41104F;
-    background: transparent;
-    margin: 4px 6px;
-    color: white;
-  }
-
-  button:nth-child(odd){
-    @include projbutton(1px);
-  }
-
-  button:nth-child(even){
-    @include projbutton(2px);
-  }
+    button:nth-child(even){
+      @include projbutton(2px);
+    }
 
 }
 
@@ -228,7 +227,7 @@ body{
   }
 }
 
-.projcontainer{
+.projcontainer {
   display: flex;
   flex-wrap: wrap;
   @media screen and (max-width:767px) {
@@ -239,8 +238,139 @@ body{
 // Small Projects
 
 #small-projects{
-  @include heading(3);
+  @include heading(4);
   .sub-heading{
     @include sub-heading(20px);
   }
+  @media screen and (max-width:767px) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.smallprojcard{
+  border: 1px solid #41104F;
+  color: white;
+  padding: 0.5dvw;
+  width: fit-content;
+  @media screen and (max-width:767px) {
+    margin: 12px auto;
+  }
+  button:nth-child(odd){
+    @include projbutton(1px);
+  }
+
+  button:nth-child(even){
+    @include projbutton(2px);
+  }
+  button{
+    @include projbutton(1px);
+  }
+  p{
+    font-weight: 300;
+    width: 300px;
+    &:nth-child(1){
+    border-bottom: $card-sub-border;
+  }
+}
+}
+
+.smallprojcontainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @media screen and (max-width:767px) {
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+
+// Ux works CSS  
+
+#uxWorks{
+  @include heading(2);
+  .sub-heading{
+    @include sub-heading;
+  }
+  @media screen and (max-width:767px) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.uxcard{
+  border: 1px solid #41104F;
+  padding: 0.5dvw;
+  width: fit-content;
+  @media screen and (max-width:767px) {
+    margin: 12px auto;
+    font-size: 14px;
+    transform: scale(0.95);
+  }
+  button{
+  @include projbutton(1px)
+}
+h3, p{
+  width: 330px;
+}
+}
+
+
+.uxcontainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  @media screen and (max-width:767px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+// Footer CSS
+
+.footer{
+  border-top: $card-sub-border;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1dvw;
+  @media screen and (max-width:767px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  h4{
+    font-weight: 300;
+  }
+  .nav-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  .icons{
+    display: flex;
+    align-items: flex-start;
+    column-gap:24px;
+    @media screen and (max-width:767px) {
+      margin: 16px;
+    }
+  } 
+}
+
+.arrow{
+  @media screen and (max-width:767px) {
+    margin-left: 90%;
+  }
+  margin-left: 98%;
+  border: $card-sub-border;
+  border-radius: 999px;
+  padding: 4px;
+  cursor: pointer;
 }

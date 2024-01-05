@@ -9,4 +9,23 @@ export const ProjectsItems:{[key:string]:string} ={
     Proj3a:"Designed and developed TravelGram, a Multilingual web app uniting Travelers. Users can join travel groups, receive city suggestions, and engage with features like liking, commenting, and real-time chat.",
     Proj3b:"Configured Redux store with Slices for live API data, using React-Redux to seamlessly share information across components.",
     Proj3c:"Implemented conditional rendering for dynamic user experiences, along with Routing and Tailwind for an enhanced UI.",
+    ProjS:"Start creating scalable discord.js bot with typescript in seconds",
+    ProjU1:"Created user flows, wireframing and prototyping after getting research, insights and feedback from aspiring fashion designer.",
+    ProjU2:"Track daily expenses, automate expenses and add outstanding.",
+    ProjU3:"Conducted UX Research and Competitive Analysis."
+}
+
+export const Links:{[key:string]:string}={
+    Resume:"https://drive.google.com/file/d/1diU3LRjM0PYgkEgng3Df8BKyyryRyPJc/view?usp=sharing",
+    Linkedin:"https://www.linkedin.com/in/nileshkumar19/",
+    GitHub:"https://github.com/NileshRE",
+    MPL1:"https://movingframes.netlify.app/",
+    MPL2:"https://moviesgpt-3ed08.firebaseapp.com/",
+    MPL3:"https://travelgram-3b665.firebaseapp.com/",
+    MPG1:"https://github.com/NileshRE/fimvideoapp",
+    MPG2:"https://github.com/NileshRE/netflix-gpt",
+    MPG3:"https://github.com/NileshRE/travelgram",
+    UX1:"https://drive.google.com/file/d/1tu749mElr0K74J5n6uQSOXtB7qrgamvv/view?usp=sharing",
+    UX2:"https://www.behance.net/gallery/150118193/Kharcha-An-Expense-Tracker-App",
+    UX3:"https://www.notion.so/UX-Research-on-Home-rental-website-32c3e7ccb85744ab92cd01f0da2ba029?pvs=4"
 }

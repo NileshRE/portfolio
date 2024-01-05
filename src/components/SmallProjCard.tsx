@@ -1,10 +1,15 @@
-import ProjectCard from "./ProjectCard";
 
-function SmallProjCard(){
+
+function SmallProjCard(props:{Tech:string, Name:string, Details:string, Livelink:string, GHub:string}){
     return(
         <>
-        <p>JS</p>
-        <ProjectCard ProjName="Grid Lights" ProjDetails={["Start creating scalable discord.js bot with typescript in seconds"]} />
+        <div className="smallprojcard">
+        <p>{props.Tech}</p>
+        <h3>{props.Name}</h3>
+        <p>{props.Details}</p>
+        <a href={props.Livelink} target="blank"><button>Live&lt;~~&gt;</button></a>
+        <a href={props.GHub} target="blank"><button>GitHub</button></a>
+        </div>
         </>
     )
 }

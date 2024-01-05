@@ -1,4 +1,4 @@
-function ProjectCard(props:{ProjName:string, ProjDetails:string[], Imgsource?:string}){
+function ProjectCard(props:{ProjName:string, ProjDetails:string[], Imgsource?:string, Livelink:string, GHub:string}){
     return(
         <>
         <div className="project-card">
@@ -9,8 +9,8 @@ function ProjectCard(props:{ProjName:string, ProjDetails:string[], Imgsource?:st
             <ul>
             {props.ProjDetails.map((detail)=><li>{detail}</li>)}
             </ul>
-            <button>Live&lt;~~&gt;</button>
-            <button>GitHub</button>
+            <a href={props.Livelink} target="blank"><button>Live&lt;~~&gt;</button></a>
+            <a href={props.GHub} target="blank"><button>GitHub</button></a>
         </div>
         </>
     )

@@ -1,20 +1,20 @@
-import SmallProjContainer from "./SmallProjContainer"
+import UxContainer from "./UxContainer"
 
-function SmallProjects(){
+function UxWorks(){
     return(
         <>
-         <div id="small-projects">
+        <div id="uxWorks">
             <div className="sub-heading">
-            <h2>small projects</h2>
+            <h2><span>#</span>ux works</h2>
             <svg xmlns="http://www.w3.org/2000/svg" width={200} height="1" viewBox="0 0 298 1" fill="none">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M297.221 1H0V0H297.221V1Z" fill="#C778DD"/>
 </svg>
 </div>
+<UxContainer />
 </div>
-<SmallProjContainer />
         </>
     )
 }
 
 
-export default SmallProjects
+export default UxWorks
