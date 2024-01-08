@@ -27,5 +27,6 @@ export const Links:{[key:string]:string}={
     MPG3:"https://github.com/NileshRE/travelgram",
     UX1:"https://drive.google.com/file/d/1tu749mElr0K74J5n6uQSOXtB7qrgamvv/view?usp=sharing",
     UX2:"https://www.behance.net/gallery/150118193/Kharcha-An-Expense-Tracker-App",
-    UX3:"https://www.notion.so/UX-Research-on-Home-rental-website-32c3e7ccb85744ab92cd01f0da2ba029?pvs=4"
+    UX3:"https://www.notion.so/UX-Research-on-Home-rental-website-32c3e7ccb85744ab92cd01f0da2ba029?pvs=4",
+    SMP:"https://github.com/NileshRE/dailyquestionpractice/tree/main/src"
 }
