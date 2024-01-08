@@ -26,7 +26,7 @@ function Footer(){
             <a href={Links.Linkedin} target="blank"><FaLinkedin size={24} /></a>
             <a href={Links.GitHub} target="blank"><FaGithub size={24} /></a>
             <a href="mailto:19nilesh.kumar@gmail.com" target="blank"><CgMail size={28} /></a>
-            <a href="https://api.whatsapp.com/send?phone=9304411983" target="blank"><FaWhatsapp size={24} /></a>
+            <a href="https://api.whatsapp.com/send?phone=+91-9304411983" target="blank"><FaWhatsapp size={24} /></a>
             </span>
         </div>
         <span onClick={handleView}>
