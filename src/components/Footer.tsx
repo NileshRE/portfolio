@@ -14,7 +14,7 @@ function Footer(){
 
     return(
         <>
-        <footer className="footer" role="footer">
+        <footer className="footer">
             <h4>Nilesh Kumar Portfolio</h4>
             <span className="nav-items">
                 <a href="#skills">skills</a>

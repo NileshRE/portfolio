@@ -1,4 +1,3 @@
-import '@fontsource-variable/fira-code';
 import Navbar from './components/NavBar.tsx';
 import IntroSection from './components/IntroSection.tsx';
 import Skills from './components/Skills.tsx';
