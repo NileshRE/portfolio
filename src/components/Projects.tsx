@@ -5,7 +5,7 @@ import SmallProjects from "./SmallProjects"
 function Projects(){
     return(
         <>
-        <div id="projects">
+        <div id="projects" role="main">
         <div className="sub-heading">
             <h2><span>#</span>projects</h2>
             <svg xmlns="http://www.w3.org/2000/svg" width={200} height="1" viewBox="0 0 298 1" fill="none">

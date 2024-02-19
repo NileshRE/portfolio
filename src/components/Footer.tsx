@@ -14,7 +14,7 @@ function Footer(){
 
     return(
         <>
-        <div className="footer">
+        <footer className="footer" role="footer">
             <h4>Nilesh Kumar Portfolio</h4>
             <span className="nav-items">
                 <a href="#skills">skills</a>
@@ -28,7 +28,7 @@ function Footer(){
             <a href="mailto:19nilesh.kumar@gmail.com" target="blank"><CgMail size={28} /></a>
             <a href="https://api.whatsapp.com/send?phone=+91-9304411983" target="blank"><FaWhatsapp size={24} /></a>
             </span>
-        </div>
+        </footer>
         <span onClick={handleView}>
             <MdArrowUpward size={24} color="white" className="arrow" />
             </span>
