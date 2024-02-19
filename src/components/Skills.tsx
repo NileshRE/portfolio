@@ -12,7 +12,7 @@ function Skills(){
 </svg>
 </div>
         <div className="skillscontainerwithIllust">
-        <img src="/assets/Frame 70.png" />
+        <img src="/assets/Frame 70.png" alt="Illustration" />
         <SkillCardContainer />
         </div>
         </div>

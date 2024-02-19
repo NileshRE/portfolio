@@ -117,10 +117,12 @@ body{
     }
   }
   .name{
-    width: 50%;
+    width: 60%;
     color: white;
-    span{
+    font-size: 28px;
+    .bar{
       color: #c778dd;
+      animation: fadeInOut 1.5s infinite;
     }
     @media screen and (max-width:767px) {
       width: 100%;
@@ -128,13 +130,22 @@ body{
   }
   .summary{
     color: rgb(196, 196, 196);
-    width: 50%;
+    width: 60%;
     line-height: 1.5rem;
     @media screen and (max-width:767px) {
       width: 100%;
     }
   }
   
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 // Skills Section CSS
@@ -375,3 +386,4 @@ h3, p{
   padding: 4px;
   cursor: pointer;
 }
+

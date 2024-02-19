@@ -3,7 +3,7 @@ function Uxcard(props:{Imgsrc:string, Name:string, Detail:string, Link:string}){
         <>
         <div className="uxcard">
             <span>
-                <img src={props.Imgsrc} />
+                <img src={props.Imgsrc} alt={props.Name} />
             </span>
             <h3>{props.Name}</h3>
             <p>{props.Detail}</p>

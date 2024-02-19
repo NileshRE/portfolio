@@ -3,7 +3,7 @@ function ProjectCard(props:{ProjName:string, ProjDetails:string[], Imgsource?:st
         <>
         <div className="project-card">
             <span className="img-container">
-                <img src={props.Imgsource} />
+                <img src={props.Imgsource} alt={props.ProjName} />
             </span>
             <h3>{props.ProjName}</h3>
             <ul>

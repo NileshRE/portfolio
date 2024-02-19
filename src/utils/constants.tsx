@@ -16,7 +16,7 @@ export const ProjectsItems:{[key:string]:string} ={
 }
 
 export const Links:{[key:string]:string}={
-    Resume:"https://drive.google.com/file/d/1diU3LRjM0PYgkEgng3Df8BKyyryRyPJc/view?usp=sharing",
+    Resume:"https://drive.google.com/file/d/14KqO82D5FJbKjIpXZDq6nQjtqiRxyqQQ/view?usp=sharing",
     Linkedin:"https://www.linkedin.com/in/nileshkumar19/",
     GitHub:"https://github.com/NileshRE",
     MPL1:"https://movingframes.netlify.app/",
