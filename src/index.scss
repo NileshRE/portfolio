@@ -124,8 +124,7 @@ body{
     margin-left: 70%;
     margin-top: -5%;
     @media screen and (max-width:767px) {
-      transform: scale(0.5);
-      margin: 0;
+      display: none;
     }
   }
   .name{
@@ -145,9 +144,19 @@ body{
     color: rgb(196, 196, 196);
     width: 60%;
     line-height: 1.5rem;
+    max-height: fit-content;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor:pointer;
     @media screen and (max-width:767px) {
       width: 100%;
     }
+  }
+
+  .full-text{
+    @extend .summary;
+    white-space: normal;
   }
   
 }
@@ -167,7 +176,7 @@ body{
   @include heading(2);
   img{
     @media screen and (max-width:767px) {
-      transform: scale(0.6);
+      display: none;
     }
   }
   .sub-heading {
@@ -264,12 +273,22 @@ body{
 #small-projects{
   @include heading(4);
   .sub-heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 24px 0px;
     @include sub-heading(20px);
+    div{
+      display: flex;
+      align-items: baseline;
+    }
   }
   @media screen and (max-width:767px) {
     margin: 0;
     padding: 0;
     width: 100%;
+  }
+  button{
+    @include projbutton(2px);
   }
 }
 
@@ -303,6 +322,8 @@ body{
 .smallprojcontainer{
   display: flex;
   justify-content: space-evenly;
+  gap: 16px;
+  flex-wrap: wrap;
   align-items: center;
   @media screen and (max-width:767px) {
     justify-content: center;
