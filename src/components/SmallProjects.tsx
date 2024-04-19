@@ -23,7 +23,7 @@ function SmallProjects(){
               />
             </svg>
             </div>
-            <a href={Links.SMP}><button>Github Link</button></a>
+            <a href={Links.SMP} target="blank"><button>Github Link</button></a>
           </div>
           <SmallProjContainer />
         </div>

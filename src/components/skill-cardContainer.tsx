@@ -5,7 +5,7 @@ function SkillCardContainer(){
         <>
         <div className="skillscontainer">
         <SkillCard Domain="Testing" Skills={["Unit", "Integration (Jest)"]} />
-        <SkillCard Domain="Frameworks/Libraries" Skills={["React","Redux","Tailwind"]} />
+        <SkillCard Domain="Frameworks/Libraries" Skills={["React","Redux","Tailwind", "Bootstrap", "Axios"]} />
         <SkillCard Domain="Languages" Skills={["JavaScript", "TypeScript"]} />
         <SkillCard Domain="Other" Skills={["HTML", "CSS", "SCSS","PWAs","Responsive Design"]} />
         <SkillCard Domain="Bundlers" Skills={["Parcel", "Vite"]} />
