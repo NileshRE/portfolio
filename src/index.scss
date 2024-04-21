@@ -97,17 +97,16 @@ body{
 // Navbar CSS
 
 .navbar{
-  display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media screen and (max-width:767px) {
-      flex-direction: column;
-      align-items: flex-start;
+    span{
+      margin: 0px 16px;
     }
   }
   @media screen and (max-width:767px) {
@@ -117,6 +116,16 @@ body{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      @media screen and (max-width:767px) {
+        background-color: #1b0224;
+        padding: 16px 16px;
+        width: 50%;
+        display: grid;
+        justify-content: center;
+        position: absolute;
+        z-index: 3; 
+        top: 64px;
+      }
     }
   }
 }
