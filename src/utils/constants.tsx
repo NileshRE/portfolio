@@ -15,6 +15,7 @@ export const ProjectsItems:{[key:string]:string} ={
     ProjS4:"Get latest Crypto coins prices, news and track prices using line charts.",
     ProjS5:"Get the temperature of your city easily with autosuggestion.",
     ProjS6:"Convert currencies with multiple options to choose from.",
+    ProjS7:"Scrap any website and extract out useful data",
     ProjU1:"Created user flows, wireframing and prototyping after getting research, insights and feedback from aspiring fashion designer.",
     ProjU2:"Track daily expenses, automate expenses and add outstanding.",
     ProjU3:"Conducted UX Research and Competitive Analysis."
@@ -24,6 +25,7 @@ export const Links:{[key:string]:string}={
     Resume:"https://drive.google.com/file/d/1rpt97CBXoxnOI2PVzMt0mH7byBr2RON8/view?usp=drive_link",
     Linkedin:"https://www.linkedin.com/in/nileshkumar19/",
     GitHub:"https://github.com/NileshRE",
+    WordPress:"https://innilesh87e.wordpress.com/",
     MPL1:"https://movingframes.netlify.app/",
     MPL2:"https://moviegpt24.netlify.app/",
     MPL3:"https://travelgram-3b665.firebaseapp.com/",
@@ -32,6 +34,6 @@ export const Links:{[key:string]:string}={
     MPG3:"https://github.com/NileshRE/travelgram",
     UX1:"https://drive.google.com/file/d/1tu749mElr0K74J5n6uQSOXtB7qrgamvv/view?usp=sharing",
     UX2:"https://www.behance.net/gallery/150118193/Kharcha-An-Expense-Tracker-App",
-    UX3:"https://www.notion.so/UX-Research-on-Home-rental-website-32c3e7ccb85744ab92cd01f0da2ba029?pvs=4",
-    SMP:"https://github.com/NileshRE/Assignments---Self-practice"
+    UX3:"https://innilesh87e.wordpress.com/2024/04/23/ux-research-on-home-rental-website/",
+    SMP:"https://github.com/NileshRE/My-Works"
 }

@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { Links, ProjectsItems } from "../utils/constants"
+import { Links, ProjectsItems } from "../../utils/constants"
 
 function ProjContainer(){
     return(

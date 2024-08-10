@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp, FaWordpress } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { MdArrowUpward } from "react-icons/md";
 import { Links } from "../utils/constants";
@@ -15,7 +15,7 @@ function Footer(){
     return(
         <>
         <footer className="footer">
-            <h4>Nilesh Kumar Portfolio</h4>
+            <h4><img src="/assets/mylogo.png" alt="logo" />Nilesh Kumar Portfolio</h4>
             <span className="nav-items">
                 <a href="#skills">skills</a>
                 <a href="#projects">projects</a>
@@ -25,6 +25,7 @@ function Footer(){
             <span className="icons">
             <a href={Links.Linkedin} target="blank"><FaLinkedin size={24} /></a>
             <a href={Links.GitHub} target="blank"><FaGithub size={24} /></a>
+            <a href={Links.WordPress} target="blank"><FaWordpress size={24} /></a>
             <a href="mailto:19nilesh.kumar@gmail.com" target="blank"><CgMail size={28} /></a>
             <a href="https://api.whatsapp.com/send?phone=+91-9304411983" target="blank"><FaWhatsapp size={24} /></a>
             </span>

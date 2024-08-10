@@ -1,5 +1,5 @@
 import SmallProjCard from "./SmallProjCard";
-import { ProjectsItems } from "../utils/constants";
+import { ProjectsItems } from "../../utils/constants";
 
 function SmallProjContainer() {
   return (
@@ -34,6 +34,11 @@ function SmallProjContainer() {
           Tech="React"
           Name="Currency Converter"
           Details={ProjectsItems.ProjS6}
+        />
+        <SmallProjCard
+          Tech="Next"
+          Name="Web Scrapper"
+          Details={ProjectsItems.ProjS7}
         />
       </div>
     </>

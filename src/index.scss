@@ -13,16 +13,17 @@
 
 // Variables
 
-$comp-padding: 10%;
+$comp-padding: 8%;
 $body-bg: #1b0224;
+$border-color:#cc2277;
 $comp-padding-bottom: 2%;
 $body-font: "Fira Code Variable";
-$card-border: 2px solid #41104F;
-$card-sub-border: 0.7px solid #ABB2BF;
+$card-border: 1px solid $border-color;
+$card-sub-border: 0.5px solid $border-color;
 
 @mixin button($padding-y, $padding-x) {
 border: $card-border;
-box-shadow: 4px 2px 2px 0px rgba(178, 60, 208, 0.25);
+box-shadow: 4px 2px 6px 0px rgba(137, 31, 11, 0.35);
 padding: $padding-y $padding-x;
 margin: 0 1rem;
 background: transparent;
@@ -30,19 +31,23 @@ color:white;
 font-family: $body-font, sans-serif;
 cursor: pointer;
 span{
-  color: #c778dd;
+  color: #cc2277;
 }
+}
+
+.title{
+  color: #cc2277;
 }
 
 @mixin projbutton($border-width){
   padding: 8px 16px;
-  border: $border-width solid #41104F;
+  border: $border-width solid $border-color;
   background: transparent;
   margin: 4px 6px;
   color: white;
   cursor: pointer;
   &:hover{
-    background-color: #c778dd6a;
+    background-color: #cc227730;
   }
 }
 
@@ -52,6 +57,10 @@ span{
     h2{
       font-size: $sub-heading-font;
       padding-bottom: $comp-padding-bottom;
+      font-weight: 100;
+      span{
+        color: $border-color;
+      }
     }
 }
 
@@ -60,7 +69,10 @@ span{
   padding-left: 10%;
   color: white;
   span{
-    color: #c778dd;
+    color: #cc2277;
+  }
+  @media screen and (max-width:767px) {
+    padding: 32px;
   }
 }
 
@@ -78,12 +90,18 @@ body{
   }
 }
 
+h3{
+  font-weight: 500;
+}
+p{
+  font-weight: 200;
+}
 // Button CSS
 
-.btn, .title{
-  @include button(1.25rem, 2rem);
+.btn{
+  @include button(1.25rem, 1rem);
   @media screen and (max-width:767px) {
-    @include button(0.5rem, 0.8rem);
+    @include button(0.5rem, 1.5rem);
     margin: 0.5rem;
   }
 }
@@ -116,15 +134,18 @@ body{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      .closebtn{
+        width: fit-content;
+        justify-self: flex-end;
+      }
       @media screen and (max-width:767px) {
         background-color: #1b0224;
-        padding: 16px 16px;
-        width: 50%;
+        padding: 8px 16px 8px 16px;
+        width: 100%;
         display: grid;
-        justify-content: center;
+        justify-content: left;
         position: absolute;
         z-index: 3; 
-        top: 64px;
       }
     }
   }
@@ -146,8 +167,9 @@ body{
     width: 60%;
     color: white;
     font-size: 28px;
+    font-weight: 100;
     .bar{
-      color: #c778dd;
+      color: $border-color;
       animation: fadeInOut 1.5s infinite;
     }
     @media screen and (max-width:767px) {
@@ -196,6 +218,13 @@ body{
   }
   .sub-heading {
     @include sub-heading;
+    @media screen and (max-width:767px) {
+      display: grid;
+  }
+  }
+  @media screen and (max-width:767px) {
+    padding: 0;
+    margin: auto 16px;
   }
 }
 
@@ -206,7 +235,7 @@ body{
   margin: 16px;
   @media screen and (max-width:767px) {
     margin: 8px;
-    width: fit-content;
+    width: 300px;
     height: auto;
     font-size: 14px;
   }
@@ -227,7 +256,7 @@ body{
   flex-wrap: wrap;
   margin-left: 12%;
   @media screen and (max-width:767px) {
-    margin:auto;
+    margin:0%;
   }
   
 }
@@ -242,14 +271,72 @@ body{
   }
 }
 
+// Certificates Section CSS
+
+#certificates{
+  @include heading(2);
+  margin-bottom: 32px;
+  button{
+    @include projbutton(1px);
+  }
+  .sub-heading{
+    @include sub-heading;
+    @media screen and (max-width:767px) {
+      display: grid;
+  }
+  @media screen and (max-width:767px) {
+    padding: 0;
+}
+}
+  .certificate-card{
+    display: inline-flex;
+    border: $card-border;
+    border-radius: 8px;
+    padding: 16px;
+    img{
+      width: 64px;
+      height: auto;
+      margin: 0 16px 0 0;
+      border-radius: 9999px;
+    }
+    p{
+      display: grid;
+      color: white;
+      span{
+        font-size: 12px;
+        color:gray;
+      }
+    }
+  }
+  .comp-icon{
+   display: block;
+  }
+  .certificate-card-container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @media screen and (max-width:767px) {
+        display: grid;
+      }
+  }
+  @media screen and (max-width:767px) {
+      padding: 0;
+      margin: auto 16px;
+    }
+}
 
 // Projects section CSS
 
 #projects{
   @include heading(2);
+  margin-bottom: 32px;
   .sub-heading{
     @include sub-heading;
+    @media screen and (max-width:767px) {
+      display: grid;
+      margin: 0 16px;
   }
+}
     button:nth-child(odd){
       @include projbutton(1px);
     }
@@ -257,7 +344,10 @@ body{
     button:nth-child(even){
       @include projbutton(2px);
     }
-
+    @media screen and (max-width:767px) {
+      padding: 0;
+      margin: auto 16px;  
+  }
 }
 
 .project-card{
@@ -265,6 +355,13 @@ body{
   margin: 12px;
   padding: 1dvw;
   width: 45%;
+  font-weight: 100;
+  h3{
+    height:24px;
+  }
+  ul{
+    height:clamp(328px,328px,380px);
+  }
   @media screen and (max-width:767px) {
     width: 100%;
     margin: 6px auto;
@@ -278,9 +375,7 @@ body{
 .projcontainer {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (max-width:767px) {
-    margin: auto;
-  }
+  
 }
 
 // Small Projects
@@ -290,11 +385,21 @@ body{
   .sub-heading{
     display: flex;
     justify-content: space-between;
-    margin: 0px 0px 24px 0px;
+    align-items: baseline;
+    margin: 0px 16px 24px 16px;
     @include sub-heading(20px);
     div{
       display: flex;
       align-items: baseline;
+    }
+    a{
+      justify-self: flex-end;
+    }
+    @media screen and (max-width:767px){
+     justify-content: space-around;
+     div{
+      display: grid;
+    }
     }
   }
   @media screen and (max-width:767px) {
@@ -308,10 +413,11 @@ body{
 }
 
 .smallprojcard{
-  border: 1px solid #41104F;
+  border: 1px solid $border-color;
   color: white;
   padding: 0.5dvw;
   width: fit-content;
+  height: 180px;
   @media screen and (max-width:767px) {
     margin: 12px auto;
   }
@@ -325,8 +431,11 @@ body{
   button{
     @include projbutton(1px);
   }
+  h3{
+    font-weight: 500;
+  }
   p{
-    font-weight: 300;
+    font-weight: 100;
     width: 300px;
     &:nth-child(1){
     border-bottom: $card-sub-border;
@@ -337,13 +446,13 @@ body{
 .smallprojcontainer{
   display: flex;
   justify-content: space-evenly;
-  gap: 16px;
+  gap: 8px;
   flex-wrap: wrap;
   align-items: center;
   @media screen and (max-width:767px) {
     justify-content: center;
     flex-direction: column;
-    margin: auto;
+    margin: 16px auto;
   }
 }
 
@@ -354,6 +463,10 @@ body{
   @include heading(2);
   .sub-heading{
     @include sub-heading;
+    @media screen and (max-width:767px) {
+     display: grid;
+     margin-left: 16px;
+    }
   }
   @media screen and (max-width:767px) {
     margin: 0;
@@ -363,22 +476,27 @@ body{
 }
 
 .uxcard{
-  border: 1px solid #41104F;
+  border: 1px solid $border-color;
   padding: 0.5dvw;
   width: fit-content;
+  height: 448px;
   @media screen and (max-width:767px) {
     margin: 12px auto;
     font-size: 14px;
     transform: scale(0.95);
   }
   button{
-  @include projbutton(1px)
+  @include projbutton(1px);
 }
-h3, p{
+h3{
   width: 330px;
+  height: 48px;
+} 
+p{
+  width: 330px;
+  height: 96px;
 }
 }
-
 
 .uxcontainer{
   display: flex;
@@ -407,13 +525,23 @@ h3, p{
     align-items: center;
   }
   h4{
+    display: flex;
+    gap: 8px;
+    align-items: center;
     font-weight: 300;
+    img{
+      width: 64px;
+      height: auto;
+    }
   }
   .nav-items{
     display: flex;
     justify-content: center;
     flex-direction: column;
     row-gap: 12px;
+    a:hover{
+        color:$border-color;
+    }
   }
   .icons{
     display: flex;
@@ -421,6 +549,13 @@ h3, p{
     column-gap:24px;
     @media screen and (max-width:767px) {
       margin: 16px;
+    }
+    a{
+      height: 32px;
+      width: auto;
+    }
+    a:hover{
+      border-bottom: 2px solid #cc2277;
     }
   } 
 }

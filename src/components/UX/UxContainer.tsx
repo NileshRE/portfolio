@@ -1,4 +1,4 @@
-import { Links, ProjectsItems } from "../utils/constants";
+import { Links, ProjectsItems } from "../../utils/constants";
 import Uxcard from "./Uxcard";
 
 function UxContainer(){

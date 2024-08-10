@@ -1,6 +1,7 @@
 import { RiMenu2Line } from "react-icons/ri";
 import { Links } from "../utils/constants"
 import { useState, useEffect } from "react";
+import { MdClose } from "react-icons/md";
 
   
     function Navbar() {
@@ -19,10 +20,14 @@ import { useState, useEffect } from "react";
       <>
         <nav className="navbar">
         <div>
-          {(windowWidth < 960) && <span onClick={()=>setShowNav(prev=>!prev)}><RiMenu2Line color="white" size={28} /></span>}
-          <h3 className="title">Portfolio</h3>
+          {(windowWidth < 960) && <span onClick={()=>setShowNav(true)}><RiMenu2Line color="white" size={28} /></span>}
+          <h3 className="title"><img src="/assets/mylogo.png" /></h3>
           </div>
-          {(showNav || (windowWidth > 960)) && <div className="nav-buttons">
+          {(showNav || (windowWidth > 960)) && 
+          <div className="nav-buttons">
+            {showNav && <button className="btn closebtn">
+             <MdClose size={16} color="white" onClick={()=>setShowNav(false)} />
+            </button>}
             <button className="btn">
               <a href="#skills">
                 <span>#</span>skills
