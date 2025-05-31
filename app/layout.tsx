@@ -8,9 +8,10 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Nilesh Kumar Portfolio",
+  title:
+    "Nilesh Kumar | Frontend Developer Portfolio – React, JavaScript, UI Engineer",
   description:
-    "Nilesh Kumar frontend engineer portfolio showing projects, experience, skills, tech stacks worked on and other skills.",
+    "Explore the professional portfolio of Nilesh Kumar, a skilled frontend developer specializing in React, JavaScript, and modern UI/UX. View projects, experience, and tech stack expertise.",
 };
 
 export default function RootLayout({
