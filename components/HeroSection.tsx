@@ -37,13 +37,15 @@ const HeroSection = () => {
           </div>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Front-End Developer with 2.5+ years of experience in building
-            responsive, high-performance web apps using Next.js, React,
-            Supabase, and Tailwind CSS. Worked on AI-powered platforms by
-            integrating LLM models streams to UI, implemented Razorpay payment
-            gateways, and handled buffer array transformations for rendering
-            content like PDFs. Focused on clean code, scalability, and seamless
-            user experience.
+            <span className="font-bold">
+              Front-End Developer with 2.5+ years
+            </span>{" "}
+            of experience in building responsive, high-performance web apps
+            using Next.js, React, Supabase, and Tailwind CSS. Worked on
+            AI-powered platforms by integrating LLM models streams to UI,
+            implemented Razorpay payment gateways, and handled buffer array
+            transformations for rendering content like PDFs. Focused on clean
+            code, scalability, and seamless user experience.
           </p>
           <div className="flex justify-center space-x-6 mt-8">
             <Button asChild variant="outline" size="icon">
