@@ -30,7 +30,7 @@ const projects = [
   {
     title: "AI Agents based Consultancy App",
     description: [
-      "Designed and developed a scalable Super Admin, Admin and User panel UI from scratch using ShadCN and Tailwind.",
+      "Designed and developed scalable Super Admin, Admin, and User panel UIs from scratch using ShadCN and Tailwind CSS within a Monorepo architecture, enabling efficient code sharing, modular development, and unified dependency management across multiple apps.",
       "Implemented AI-driven features, including real-time streamed responses from the GPT model and custom AI-generated responses from user-uploaded PDFs.",
       "Enabled AI-based data visualization by dynamically generating graphs from extracted data in uploaded CSVs and documents.",
       "Integrated APIs for authentication, data extraction with Airbyte, and vector database queries.",
