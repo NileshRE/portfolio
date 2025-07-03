@@ -1,5 +1,6 @@
 import { experience } from "@/lib/constants";
 import {
+  Activity,
   Code,
   Layers,
   Link,
@@ -68,6 +69,10 @@ const AboutMeSection = () => {
                 <div className="flex items-center space-x-2">
                   <TestTubeDiagonal className="h-5 w-5 text-primary" />
                   <span>Developer Testing</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Activity className="h-5 w-5 text-primary" />
+                  <span>Logging & Monitoring</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Palette className="h-5 w-5 text-primary" />

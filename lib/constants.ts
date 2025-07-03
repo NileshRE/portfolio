@@ -22,9 +22,10 @@ const projects = [
       "Implemented interactive PDF rendering from buffer data, delivering a flip-book-style experience with page-turn animations and sound effects for a realistic reading experience.",
       "Rebuilt the entire website using Next.js, achieving a 25% reduction in load time by optimizing core web vitals, compressing images, and minimizing network requests, resulting in an overall performance boost of 12%.",
       "Developed a community feature where users can post, edit, like, and comment on trading-related discussions, fostering engagement and user interaction.",
+      "Integrated Sentry for real-time error logging and monitoring, improving issue tracking and system reliability.",
     ],
     image: "/placeholder.svg?height=300&width=500",
-    technologies: ["Next-15", "TypeScript", "RazorPay"],
+    technologies: ["Next-15", "TypeScript", "RazorPay", "Sentry"],
     featured: false,
   },
   {
