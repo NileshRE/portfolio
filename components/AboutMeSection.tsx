@@ -1,7 +1,15 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { experience } from "@/lib/constants";
 import {
   Activity,
   Code,
+  Crosshair,
   Layers,
   Link,
   MonitorSmartphone,
@@ -13,13 +21,6 @@ import {
   UserCheck,
   Zap,
 } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 
 const AboutMeSection = () => {
   return (
@@ -41,38 +42,42 @@ const AboutMeSection = () => {
                 architectures, I bring a problem-solving mindset and a strong
                 emphasis on best practices and user-centric development.
               </p>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 items-start">
                 <div className="flex items-center space-x-2">
-                  <Link className="h-5 w-5 text-primary" />
-                  <span>API Integration</span>
+                  <Zap className="h-5 w-5 text-primary" />
+                  <span>Performance</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Layers className="h-5 w-5 text-primary" />
                   <span>Stateful UI</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <UserCheck className="h-5 w-5 text-primary" />
-                  <span>Role-based UI</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <ShieldAlert className="h-5 w-5 text-primary" />
-                  <span>Centralized Error Handling</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Zap className="h-5 w-5 text-primary" />
-                  <span>Performance</span>
+                  <Link className="h-5 w-5 text-primary" />
+                  <span>API Integration</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MonitorSmartphone className="h-5 w-5 text-primary" />
                   <span>Responsive Design</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <TestTubeDiagonal className="h-5 w-5 text-primary" />
-                  <span>Developer Testing</span>
+                <div className="flex items-start space-x-2">
+                  <UserCheck className="h-5 w-5 text-primary" />
+                  <span>Role-based Access Control (RBAC)</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <ShieldAlert className="h-5 w-5 text-primary" />
+                  <span>Centralized Error Handling</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <Crosshair className="h-5 w-5 text-primary" />
+                  <span>Cross Browser Compatibility</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Activity className="h-5 w-5 text-primary" />
                   <span>Logging & Monitoring</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <TestTubeDiagonal className="h-5 w-5 text-primary" />
+                  <span>Developer Testing</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Palette className="h-5 w-5 text-primary" />
@@ -83,12 +88,12 @@ const AboutMeSection = () => {
                   <span>Clean Code</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Speech className="h-5 w-5 text-primary" />
-                  <span>Clear Communicator</span>
-                </div>
-                <div className="flex items-center space-x-2">
                   <Timer className="h-5 w-5 text-primary" />
                   <span>Timely delivery</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Speech className="h-5 w-5 text-primary" />
+                  <span>Clear Communicator</span>
                 </div>
               </div>
             </div>

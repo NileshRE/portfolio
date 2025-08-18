@@ -1,8 +1,8 @@
 "use client";
-import Link from "next/link";
-import { Button } from "./ui/button";
 import { links } from "@/lib/constants";
 import { Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 const ContactSection = () => {
   return (

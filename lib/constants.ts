@@ -1,5 +1,5 @@
-import NamasteDevLogo from "@/assets/images/namastedev.png";
 import CouseraLogo from "@/assets/images/coursera.png";
+import NamasteDevLogo from "@/assets/images/namastedev.png";
 
 const projects = [
   {
@@ -20,8 +20,8 @@ const projects = [
     description: [
       "Integrated Razorpay Payment Gateway to enable smooth and secure subscription plan purchases, enhancing the monetization flow.",
       "Implemented interactive PDF rendering from buffer data, delivering a flip-book-style experience with page-turn animations and sound effects for a realistic reading experience.",
-      "Rebuilt the entire website using Next.js, achieving a 25% reduction in load time by optimizing core web vitals, compressing images, and minimizing network requests, resulting in an overall performance boost of 12%.",
-      "Developed a community feature where users can post, edit, like, and comment on trading-related discussions, fostering engagement and user interaction.",
+      "Rebuilt the entire website using Next.js SSR, achieving a 25% reduction in load time by optimizing core web vitals, compressing images, and minimizing network requests, resulting in an overall performance boost of 12%.",
+      "Built a community feature with post, edit, like, and comment functionality, adding access control to block restricted users and redirect unauthorized users to login.",
       "Integrated Sentry for real-time error logging and monitoring, improving issue tracking and system reliability.",
     ],
     image: "/placeholder.svg?height=300&width=500",
@@ -222,11 +222,11 @@ const uxProjects = [
 ];
 
 export {
-  projects,
-  skills,
+  certificates,
   experience,
   links,
   navLinks,
-  certificates,
+  projects,
+  skills,
   uxProjects,
 };
