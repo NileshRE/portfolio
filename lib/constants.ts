@@ -86,8 +86,9 @@ const skills = [
   { name: "Shadcn/UI", level: 90, category: "UI Library" },
   { name: "Ant Design", level: 85, category: "UI Library" },
   { name: "Supabase", level: 80, category: "Backend" },
-  { name: "React Native", level: 60, category: "App" },
   { name: "Git", level: 85, category: "Tools" },
+  { name: "Jest (Unit Testing)", level: 70, category: "Tools" },
+  { name: "React Native", level: 60, category: "App" },
 ];
 
 const experience = [
