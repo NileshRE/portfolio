@@ -19,7 +19,9 @@ const HeroSection = () => {
               className="rounded-full mx-auto mb-6 border-4 border-primary/20"
             />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Nilesh Kumar</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-whiteGlow">
+            Nilesh Kumar
+          </h1>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" asChild>

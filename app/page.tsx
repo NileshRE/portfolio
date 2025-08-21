@@ -1,12 +1,13 @@
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import AboutMeSection from "@/components/AboutMeSection";
+import AchievementSection from "@/components/Achievements";
+import CertificateSection from "@/components/CertificateSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
-import AboutMeSection from "@/components/AboutMeSection";
 import UXSection from "@/components/UXSection";
-import CertificateSection from "@/components/CertificateSection";
 
 export default function Portfolio() {
   return (
@@ -17,6 +18,7 @@ export default function Portfolio() {
       <ProjectsSection />
       <SkillsSection />
       <CertificateSection />
+      <AchievementSection />
       <UXSection />
       <ContactSection />
       <Footer />

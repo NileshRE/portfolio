@@ -1,14 +1,14 @@
 "use client";
-import { useState, useEffect } from "react";
-import { Button } from "./ui/button";
-import { Menu, Moon, Sun, X } from "lucide-react";
-import { navLinks } from "@/lib/constants";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetTrigger,
-  SheetClose,
 } from "@/components/ui/sheet";
+import { navLinks } from "@/lib/constants";
+import { Menu, Moon, Sun, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Button } from "./ui/button";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <h2 className="text-3xl font-bold border-b-2 border-black dark:border-white ml-4">
+          <h2 className="text-3xl font-bold border-b-2 border-black dark:border-white ml-4 drop-shadow-whiteGlow">
             N
           </h2>
 

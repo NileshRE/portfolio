@@ -2,24 +2,21 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { projects } from "@/lib/constants";
-import { Button } from "./ui/button";
-import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
+import Link from "next/link";
 import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-16 px-4 scroll-mt-24">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Projects
-        </h2>
+        <h2 className="header2">Projects</h2>
         {/* <div className="flex items-center gap-4 mb-12">
           <Button variant="outline" size="sm" className="rounded-full">
             Company

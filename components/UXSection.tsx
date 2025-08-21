@@ -1,4 +1,8 @@
 import { uxProjects } from "@/lib/constants";
+import { ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 import {
   Card,
   CardContent,
@@ -6,18 +10,12 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
-import Link from "next/link";
-import { ExternalLink } from "lucide-react";
 
 const UXSection = () => {
   return (
     <section id="ux" className="py-16 px-4 bg-muted/50 scroll-mt-24">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          UX Works
-        </h2>
+        <h2 className="header2">UX Works</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {uxProjects.map((project, index) => (
             <Card key={index} className="hover:shadow-md transition-shadow">

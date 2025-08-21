@@ -92,6 +92,10 @@ const config: Config = {
       fontFamily: {
         fira: ["var(--font-fira-code)", "monospace"],
       },
+      dropShadow: {
+        whiteGlow: "0 0 4px rgba(255,255,255,0.7)",
+        yellowGlow: "0 0 4px rgba(255,215,0,0.6)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -1,17 +1,15 @@
-import Image from "next/image";
-import { Card, CardHeader, CardTitle } from "./ui/card";
 import { certificates } from "@/lib/constants";
-import { Button } from "./ui/button";
-import Link from "next/link";
 import { Eye } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { Card, CardHeader } from "./ui/card";
 
 const CertificateSection = () => {
   return (
     <section id="certificates" className="py-16 px-4 scroll-mt-24">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          My Certificates
-        </h2>
+        <h2 className="header2">My Certificates</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {certificates.map((certificate, index) => (
             <Card key={index}>
@@ -24,7 +22,7 @@ const CertificateSection = () => {
                       className="w-16 h-16 rounded-full"
                     />
                     <div>
-                      <h3 className="text-xl font-medium mb-2">
+                      <h3 className="text-lg font-medium mb-2">
                         {certificate.title}
                       </h3>
                       <p className="text-muted-foreground text-sm">
