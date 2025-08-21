@@ -7,7 +7,7 @@ const AchievementSection = () => {
         <h2 className="header2">My Achievements</h2>
         <div className="space-y-4">
           <div className="flex items-center gap-3 bg-neutral-100/60 dark:bg-neutral-900/60 p-4 rounded-xl shadow-md">
-            <Award className="size-6 text-yellow-400 drop-shadow-yellowGlow" />
+            <Award className="size-6 text-yellow-400 drop-shadow-yellowGlow flex-shrink-0" />
             <p>
               Awarded{" "}
               <span className="font-semibold">Employee of the Month</span> at
@@ -20,7 +20,7 @@ const AchievementSection = () => {
           </div>
 
           <div className="flex items-center gap-3 bg-neutral-100/60 dark:bg-neutral-900/60 p-4 rounded-xl shadow-md">
-            <Award className="size-6 text-yellow-400 drop-shadow-yellowGlow" />
+            <Award className="size-6 text-yellow-400 drop-shadow-yellowGlow flex-shrink-0" />
             <p>
               Received the{" "}
               <span className="font-semibold">Carnival Ninja Award</span> at
