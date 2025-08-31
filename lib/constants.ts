@@ -5,12 +5,11 @@ const projects = [
   {
     title: "Trading With Vivek",
     description: [
-      "Integrated Razorpay Payment Gateway with secure subscription workflows, handling payment events via webhooks and improving reliability of the monetization flow.",
-      "Rebuilt the platform using Next.js SSR with server-side rendering, code-splitting, image compression, and request minimization — achieving 25% faster page loads and a 12% boost in Lighthouse performance score.",
-      "Implemented a custom PDF renderer using react-pdf with buffer data streaming, resolved legacy browser compatibility issues by patching and downgrading the library.",
-      "Engineered a community feature with CRUD (post, edit, like, comment), optimistic UI updates, API throttling, and a responsive 4*4 image gallery with modal preview.",
-      "Designed secure authentication with single-session enforcement, ensuring a user is logged out from previous devices when signing in from a new device.",
-      "Integrated Sentry for real-time error logging and monitoring, improving issue tracking and system reliability.",
+      "Integrated Razorpay Payment Gateway with secure subscription workflows and webhook handling to improve payment reliability.",
+      "Rebuilt the platform using Next.js SSR with code-splitting, server API calls, image optimization, and request minimization, achieving 25% faster loads and a 12% higher Lighthouse performance score.",
+      "Implemented a custom PDF renderer using react-pdf with buffer streaming, keyboard accessibility support (Esc, arrows, zoom) and legacy browser compatibility fixes.",
+      "Engineered a community module with CRUD operations, optimistic UI updates for like feature, API throttling, and a responsive 4*4 image gallery with modal preview.",
+      "Designed secure authentication with single-session enforcement and integrated Sentry monitoring for real-time error tracking",
     ],
     image: "/placeholder.svg?height=300&width=500",
     technologies: ["Next-15", "TypeScript", "RazorPay", "Sentry"],
