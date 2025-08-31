@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 
 const AboutMeSection = () => {
+const iconClass ="h-5 w-5 text-primary shrink-0"
   return (
     <section id="about" className="py-16 px-4 bg-muted/50 scroll-mt-24">
       <div className="container mx-auto">
@@ -43,59 +44,59 @@ const AboutMeSection = () => {
               </p>
               <div className="grid grid-cols-2 gap-4 items-start">
                 <div className="flex items-center space-x-2">
-                  <Zap className="h-5 w-5 text-primary" />
+                  <Zap className={iconClass} />
                   <span>Performance</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Layers className="h-5 w-5 text-primary" />
+                  <Layers className={iconClass} />
                   <span>Stateful UI</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Link className="h-5 w-5 text-primary" />
+                  <Link className={iconClass} />
                   <span>API Integration</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <MonitorSmartphone className="h-5 w-5 text-primary" />
+                  <MonitorSmartphone className={iconClass} />
                   <span>Responsive Design</span>
                 </div>
                 <div className="flex items-start space-x-2">
-                  <UserCheck className="h-5 w-5 text-primary" />
+                  <UserCheck className={iconClass} />
                   <span>Role-based Access Control (RBAC)</span>
                 </div>
                 <div className="flex items-start space-x-2">
-                  <ShieldAlert className="h-5 w-5 text-primary" />
+                  <ShieldAlert className={iconClass} />
                   <span>Centralized Error Handling</span>
                 </div>
                 <div className="flex items-start space-x-2">
-                  <Crosshair className="h-5 w-5 text-primary" />
+                  <Crosshair className={iconClass} />
                   <span>Cross Browser Compatibility</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <PersonStanding className="h-5 w-5 text-primary" />
+                  <PersonStanding className={iconClass} />
                   <span>Accessibility</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Activity className="h-5 w-5 text-primary" />
+                  <Activity className={iconClass} />
                   <span>Logging & Monitoring</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <TestTubeDiagonal className="h-5 w-5 text-primary" />
+                  <TestTubeDiagonal className={iconClass} />
                   <span>Developer Testing</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Palette className="h-5 w-5 text-primary" />
+                  <Palette className={iconClass} />
                   <span>UI/UX Focus</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Code className="h-5 w-5 text-primary" />
+                  <Code className={iconClass} />
                   <span>Clean Code</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Timer className="h-5 w-5 text-primary" />
+                  <Timer className={iconClass} />
                   <span>Timely delivery</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Speech className="h-5 w-5 text-primary" />
+                  <Speech className={iconClass} />
                   <span>Clear Communicator</span>
                 </div>
               </div>
