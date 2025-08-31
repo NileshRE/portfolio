@@ -12,7 +12,13 @@ const projects = [
       "Designed secure authentication with single-session enforcement and integrated Sentry monitoring for real-time error tracking",
     ],
     image: "/placeholder.svg?height=300&width=500",
-    technologies: ["Next-15", "TypeScript", "RazorPay", "Sentry"],
+    technologies: [
+      "Next-15",
+      "TypeScript",
+      "RazorPay",
+      "Sentry",
+      "Accessibility",
+    ],
     featured: false,
   },
   {

@@ -14,6 +14,7 @@ import {
   Link,
   MonitorSmartphone,
   Palette,
+  PersonStanding,
   ShieldAlert,
   Speech,
   TestTubeDiagonal,
@@ -68,6 +69,10 @@ const AboutMeSection = () => {
                 <div className="flex items-start space-x-2">
                   <Crosshair className="h-5 w-5 text-primary" />
                   <span>Cross Browser Compatibility</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <PersonStanding className="h-5 w-5 text-primary" />
+                  <span>Accessibility</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Activity className="h-5 w-5 text-primary" />
