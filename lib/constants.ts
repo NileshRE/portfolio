@@ -3,6 +3,20 @@ import NamasteDevLogo from "@/assets/images/namastedev.png";
 
 const projects = [
   {
+    title: "Trading With Vivek",
+    description: [
+      "Integrated Razorpay Payment Gateway with secure subscription workflows, handling payment events via webhooks and improving reliability of the monetization flow.",
+      "Rebuilt the platform using Next.js SSR with server-side rendering, code-splitting, image compression, and request minimization — achieving 25% faster page loads and a 12% boost in Lighthouse performance score.",
+      "Implemented a custom PDF renderer using react-pdf with buffer data streaming, resolved legacy browser compatibility issues by patching and downgrading the library.",
+      "Engineered a community feature with CRUD (post, edit, like, comment), optimistic UI updates, API throttling, and a responsive 4*4 image gallery with modal preview.",
+      "Designed secure authentication with single-session enforcement, ensuring a user is logged out from previous devices when signing in from a new device.",
+      "Integrated Sentry for real-time error logging and monitoring, improving issue tracking and system reliability.",
+    ],
+    image: "/placeholder.svg?height=300&width=500",
+    technologies: ["Next-15", "TypeScript", "RazorPay", "Sentry"],
+    featured: false,
+  },
+  {
     title: "Salesright.ai",
     description: [
       "Efficiently rendered large datasets (25–30k rows, 200 rows per page) using virtualization techniques to ensure smooth performance. Optimized re-renders with useMemo and useCallback for improved efficiency.",
@@ -13,19 +27,6 @@ const projects = [
     ],
     image: "/placeholder.svg?height=300&width=500",
     technologies: ["Next.js", "Tailwind CSS", "AntDesign", "Recharts"],
-    featured: false,
-  },
-  {
-    title: "Trading With Vivek",
-    description: [
-      "Integrated Razorpay Payment Gateway to enable smooth and secure subscription plan purchases, enhancing the monetization flow.",
-      "Implemented interactive PDF rendering from buffer data, delivering a flip-book-style experience with page-turn animations and sound effects for a realistic reading experience.",
-      "Rebuilt the entire website using Next.js SSR, achieving a 25% reduction in load time by optimizing core web vitals, compressing images, and minimizing network requests, resulting in an overall performance boost of 12%.",
-      "Built a community feature with post, edit, like, and comment functionality, adding access control to block restricted users and redirect unauthorized users to login.",
-      "Integrated Sentry for real-time error logging and monitoring, improving issue tracking and system reliability.",
-    ],
-    image: "/placeholder.svg?height=300&width=500",
-    technologies: ["Next-15", "TypeScript", "RazorPay", "Sentry"],
     featured: false,
   },
   {
