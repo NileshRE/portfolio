@@ -20,6 +20,7 @@ const projects = [
       "Accessibility",
     ],
     featured: false,
+    live: "https://tradingwithvivek.com/",
   },
   {
     title: "Salesright.ai",
@@ -33,6 +34,7 @@ const projects = [
     image: "/placeholder.svg?height=300&width=500",
     technologies: ["Next.js", "Tailwind CSS", "AntDesign", "Recharts"],
     featured: false,
+    live: "https://scuderiacarparts.salesright.ai",
   },
   {
     title: "AI Agents based Consultancy App",
