@@ -53,7 +53,7 @@ const Chat = () => {
           <PopoverContent
             side="top"
             align="end"
-            className="w-96 p-0 rounded-xl overflow-hidden"
+            className="w-72 md:w-96 p-0 rounded-xl overflow-hidden"
           >
             <div className="flex items-center justify-between px-3 py-2 bg-background border-b">
               <h3 className="text-sm font-semibold py-2">Ask about Nilesh!</h3>
