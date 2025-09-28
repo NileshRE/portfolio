@@ -30,6 +30,7 @@ const projects = [
       "Built a feature to auto-check or disable item checkboxes based on valid input, with real-time toast notifications for errors or validation feedback.",
       "Developed advanced table filtering functionality with 9–10 filters, leveraging URL search params for seamless filter state management and sharing.",
       "Created dynamic data visualizations using Recharts, displaying performance insights based on salesperson and customer data.",
+      "Built a chatbot using Google Dialogflow CX supporting multi-language, form-rendering, clickable chips, and custom payloads using vanilla JS.",
     ],
     image: "/placeholder.svg?height=300&width=500",
     technologies: ["Next.js", "Tailwind CSS", "AntDesign", "Recharts"],
@@ -43,6 +44,7 @@ const projects = [
       "Implemented AI-driven features, including real-time streamed responses from the GPT model and custom AI-generated responses from user-uploaded PDFs.",
       "Enabled AI-based data visualization by dynamically generating graphs from extracted data in uploaded CSVs and documents.",
       "Integrated APIs for authentication, data extraction with Airbyte, and vector database queries.",
+      "Developed BFF (Backend-for-Frontend) layer for rendering dynamic forms, improving performance and separation of concerns between frontend and backend.",
       "AI agents based consultancy web app which offers comprehensive admin dashboard for managing business, website and analytics with real-time data visualization.",
     ],
     image: "/placeholder.svg?height=300&width=500",
@@ -172,7 +174,7 @@ enum NavLink {
 const navLinks = [
   { href: "#home", label: NavLink.Home },
   { href: "#about", label: NavLink.About },
-  { href: "#projects", label: NavLink.Projects },
+  { href: "#all-projects", label: NavLink.Projects },
   { href: "#skills", label: NavLink.Skills },
   { href: "#certificates", label: NavLink.Certificates },
   { href: "#ux", label: NavLink.UX },
@@ -229,13 +231,56 @@ const uxProjects = [
     live: "https://innilesh87e.wordpress.com/2024/04/23/ux-research-on-home-rental-website/",
   },
 ];
+const quickQuestions = [
+  "Give me brief intro about Nilesh?",
+  "What are the projects he has built?",
+  "What are the challenges he has faced on live projects?",
+  "What are the UI features he has build and deployed?",
+];
+
+const projectProblems = [
+  {
+    project: "Trading With Vivek",
+    problems: [
+      {
+        title: "PDF Rendering Compatibility",
+        desc: "Faced an issue where rendering PDFs using array buffer data failed on older Chrome and Safari versions due to ES6 compilation limitations. Resolved it by downgrading the library for compatibility and ensured PDF content was secure—non-downloadable and non-copyable.",
+      },
+    ],
+  },
+  {
+    project: "Salesright.ai",
+    problems: [
+      {
+        title: "Dialogflow CX Integration",
+        desc: "Rewrote legacy PHP code for manipulating Dialogflow CX into a Next.js-compatible solution. Overcame the challenge of accessing shadow DOM elements (not immediately available) by combining React Refs with polling to reliably interact with nested elements.",
+      },
+      {
+        title: "UI Flickering in Auth Flows",
+        desc: "Encountered UI flickering when unauthorized users accessed protected routes via higher-order components. Fixed this by leveraging Next.js middleware to intercept routing requests at runtime, ensuring smoother redirection and stable UI rendering.",
+      },
+    ],
+  },
+  {
+    project: "AI Agents based Consultancy App",
+    problems: [
+      {
+        title: "Real-Time Graph Rendering from AI Data",
+        desc: "Implemented dynamic graph rendering from AI responses in real time. Addressed challenges with error handling, loading states, and inconsistent data to ensure smooth visualization.",
+      },
+    ],
+  },
+];
 
 export {
   certificates,
   experience,
   links,
+  NavLink,
   navLinks,
+  projectProblems,
   projects,
+  quickQuestions,
   skills,
   uxProjects,
 };

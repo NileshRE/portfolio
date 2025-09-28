@@ -1,6 +1,7 @@
 import AboutMeSection from "@/components/AboutMeSection";
 import AchievementSection from "@/components/Achievements";
 import CertificateSection from "@/components/CertificateSection";
+import Chat from "@/components/Chat";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -19,6 +20,7 @@ export default function Portfolio() {
       <SkillsSection />
       <CertificateSection />
       <AchievementSection />
+      <Chat />
       <UXSection />
       <ContactSection />
       <Footer />

@@ -39,7 +39,7 @@ const HeroSection = () => {
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             <span className="font-bold">
-              Front-End Developer with 2.5+ years
+              Front-End Developer with 2.8+ years
             </span>{" "}
             of experience in building responsive, high-performance web apps
             using Next.js, React, Supabase, and Tailwind CSS. Worked on

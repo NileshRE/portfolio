@@ -5,10 +5,17 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { navLinks } from "@/lib/constants";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { NavLink, navLinks } from "@/lib/constants";
+import { ChevronDown, Menu, Moon, Sun, X } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "./ui/collapsible";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,15 +43,41 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8 items-center">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="font-medium hover:text-primary/80 transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const isProjectLink = link.label === NavLink.Projects;
+              return isProjectLink ? (
+                <Popover key={link.href}>
+                  <PopoverTrigger asChild>
+                    <button className="font-medium hover:text-primary/80 transition-colors">
+                      {link.label}
+                    </button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-64">
+                    <Link
+                      href="#all-projects"
+                      className="block px-2 py-1 hover:bg-accent transition border-b mb-2"
+                    >
+                      Projects
+                    </Link>
+                    <Link
+                      href="#challenges"
+                      className="block px-2 py-1 hover:bg-accent transition border-b"
+                    >
+                      Challenges Faced on Live Projects
+                    </Link>
+                  </PopoverContent>
+                </Popover>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="font-medium hover:text-primary/80 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+
             <Button
               variant="outline"
               size="icon"
@@ -83,17 +116,41 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-full p-8">
                 <div className="flex flex-col space-y-4">
-                  {navLinks.map((link) => (
-                    <SheetClose asChild key={link.href}>
-                      <a
-                        href={link.href}
-                        className="hover:text-primary transition-colors"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {link.label}
-                      </a>
-                    </SheetClose>
-                  ))}
+                  {navLinks.map((link) => {
+                    const isProjectLink = link.label === NavLink.Projects;
+
+                    return isProjectLink ? (
+                      <Collapsible key={link.href}>
+                        <div className="flex items-center justify-between">
+                          {link.label}
+                          <CollapsibleTrigger className="flex items-center justify-between font-medium hover:text-primary transition-colors">
+                            <ChevronDown />
+                          </CollapsibleTrigger>
+                        </div>
+                        <CollapsibleContent className="pl-4 mt-2 space-y-2">
+                          <SheetClose asChild>
+                            <Link
+                              href="#challenges"
+                              className="block hover:text-primary transition-colors"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              Challenges Faced on Live Projects
+                            </Link>
+                          </SheetClose>
+                        </CollapsibleContent>
+                      </Collapsible>
+                    ) : (
+                      <SheetClose asChild key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="hover:text-primary transition-colors"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          {link.label}
+                        </Link>
+                      </SheetClose>
+                    );
+                  })}
                 </div>
               </SheetContent>
             </Sheet>

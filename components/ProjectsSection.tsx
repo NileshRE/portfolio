@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { projects } from "@/lib/constants";
+import { projectProblems, projects } from "@/lib/constants";
 import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
@@ -14,8 +14,8 @@ import { Button } from "./ui/button";
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-16 px-4 scroll-mt-24">
-      <div className="container mx-auto">
+    <section className="py-16 px-4">
+      <div className="container mx-auto scroll-mt-24" id="all-projects">
         <h2 className="header2">Projects</h2>
         {/* <div className="flex items-center gap-4 mb-12">
           <Button variant="outline" size="sm" className="rounded-full">
@@ -85,6 +85,38 @@ const ProjectsSection = () => {
                 </CardFooter>
               </Card>
             ))}
+        </div>
+        <div className="scroll-mt-24" id="challenges">
+          {projectProblems?.length > 0 && (
+            <Card className="p-4 mt-4">
+              <CardHeader>
+                <CardTitle>Challenges faced on Live Projects</CardTitle>
+              </CardHeader>
+              <CardContent className="p-2 grid grid-cols-1 lg:grid-cols-3 gap-4">
+                {projectProblems?.map((prob) => (
+                  <Card key={prob?.project}>
+                    <CardHeader>
+                      <CardTitle className="text-lg text-gray-400">
+                        {prob?.project}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="list-outside list-disc">
+                        {prob?.problems?.map((detail) => (
+                          <li key={detail?.title} className="block mb-2">
+                            <span className="font-semibold text-xl my-2 inline-block">
+                              {detail?.title}:{" "}
+                            </span>
+                            {detail?.desc}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                ))}
+              </CardContent>
+            </Card>
+          )}
         </div>
       </div>
     </section>
