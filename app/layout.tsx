@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     "Nilesh Kumar | Frontend Developer Portfolio – React, JavaScript, UI Engineer",
   description:
     "Explore the professional portfolio of Nilesh Kumar, a skilled frontend developer specializing in React, JavaScript, and modern UI/UX. View projects, experience, and tech stack expertise.",
+  authors: [
+    {
+      name: "Nilesh Kumar",
+      url: "https://nileshkumarportfolio3105.vercel.app/",
+    },
+  ],
   openGraph: {
     images: ["/images/opengraph-image.png"],
   },
