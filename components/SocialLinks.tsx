@@ -62,30 +62,32 @@ const SocialLinks = () => {
 
   return (
     <TooltipProvider>
-      <div className="flex justify-center space-x-6 items-center">
+      <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
         <span className="inline-block font-semibold">Connect with me:</span>
-        {items.map((item, idx) => (
-          <Tooltip key={idx}>
-            <TooltipTrigger asChild>
-              <Button
-                asChild
-                variant="outline"
-                size="icon"
-                className={`${item.shadow} hover:shadow-lg transition-shadow`}
-              >
-                <Link
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+        <div className="flex space-x-6 items-center">
+          {items.map((item, idx) => (
+            <Tooltip key={idx}>
+              <TooltipTrigger asChild>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="icon"
+                  className={`${item.shadow} hover:shadow-lg transition-shadow`}
                 >
-                  {item.icon}
-                </Link>
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>{item.label}</TooltipContent>
-          </Tooltip>
-        ))}
+                  <Link
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {item.icon}
+                  </Link>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>{item.label}</TooltipContent>
+            </Tooltip>
+          ))}
+        </div>
       </div>
     </TooltipProvider>
   );

@@ -41,9 +41,13 @@ const Chat = () => {
         {/* Chat popover */}
         <Popover open={showChat} onOpenChange={setShowChat}>
           <PopoverTrigger asChild>
-            <button className="inline-block p-3 rounded-full bg-gray-600 dark:bg-gray-100">
+            <button
+              className={`inline-block p-3 rounded-full ${
+                !showChat ? "bg-gray-600 dark:bg-gray-100" : "border"
+              }`}
+            >
               {showChat ? (
-                <X className="size-6 text-gray-200 dark:text-gray-700" />
+                <X className="size-6 text-gray-500 dark:text-gray-400" />
               ) : (
                 <BotMessageSquare className="size-6 text-gray-200 dark:text-gray-700" />
               )}
@@ -53,16 +57,16 @@ const Chat = () => {
           <PopoverContent
             side="top"
             align="end"
-            className="w-72 md:w-96 p-0 rounded-xl overflow-hidden"
+            className="w-[280px] min-[321px]:w-[344px] md:w-[440px] p-0 rounded-xl overflow-hidden"
           >
             <div className="flex items-center justify-between px-3 py-2 bg-background border-b">
               <h3 className="text-sm font-semibold py-2">Ask about Nilesh!</h3>
-              <p className="flex items-center gap-2">
+              <p className="flex items-center gap-4">
                 <span onClick={handleChatRefresh}>
-                  <RefreshCcw className="size-4 cursor-pointer text-gray-500" />
+                  <RefreshCcw className="size-5 cursor-pointer text-gray-500 hover:text-gray-200" />
                 </span>
                 <span onClick={handleCloseChat}>
-                  <X className="size-4 cursor-pointer text-gray-500" />
+                  <X className="size-5 cursor-pointer text-gray-500 hover:text-gray-200" />
                 </span>
               </p>
             </div>
@@ -143,6 +147,7 @@ const Chat = () => {
 
             <div className="flex items-center gap-2 border-t px-3 py-2 bg-background">
               <textarea
+                required
                 value={input}
                 onChange={handleInput}
                 onKeyDown={handleKeyDown}
@@ -153,9 +158,9 @@ const Chat = () => {
 
               <Button
                 size="icon"
-                variant="outline"
+                variant="default"
                 onClick={() => handleSend()}
-                type="button"
+                type="submit"
                 className={`${
                   status === Status.LOADING ? "cursor-wait" : "cursor-pointer"
                 }`}
