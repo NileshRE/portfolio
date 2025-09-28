@@ -43,7 +43,9 @@ const Chat = () => {
           <PopoverTrigger asChild>
             <button
               className={`inline-block p-3 rounded-full ${
-                !showChat ? "bg-gray-600 dark:bg-gray-100" : "border"
+                !showChat
+                  ? "bg-gray-600 dark:bg-gray-100"
+                  : "border backdrop-blur-md"
               }`}
             >
               {showChat ? (
