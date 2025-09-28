@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function NotFound() {
@@ -9,12 +10,9 @@ export default function NotFound() {
       <p className="text-lg mb-6">
         Oops! The page you are looking for does not exist.
       </p>
-      <Link
-        href="/"
-        className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-      >
-        Go Home
-      </Link>
+      <Button variant="default" asChild>
+        <Link href="/">Go Home</Link>
+      </Button>
     </div>
   );
 }
