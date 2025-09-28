@@ -3,6 +3,7 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { NavLink, navLinks } from "@/lib/constants";
@@ -115,10 +116,10 @@ const Header = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-full p-8">
+                <SheetTitle className="hidden"></SheetTitle>
                 <div className="flex flex-col space-y-4">
                   {navLinks.map((link) => {
                     const isProjectLink = link.label === NavLink.Projects;
-
                     return isProjectLink ? (
                       <Collapsible key={link.href}>
                         <div className="flex items-center justify-between">
@@ -129,13 +130,22 @@ const Header = () => {
                         </div>
                         <CollapsibleContent className="pl-4 mt-2 space-y-2">
                           <SheetClose asChild>
-                            <Link
-                              href="#challenges"
-                              className="block hover:text-primary transition-colors"
-                              onClick={() => setIsOpen(false)}
-                            >
-                              Challenges Faced on Live Projects
-                            </Link>
+                            <div>
+                              <Link
+                                href="#all-projects"
+                                className="block px-2 py-1 hover:bg-accent transition border-b mb-2"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                Projects
+                              </Link>
+                              <Link
+                                href="#challenges"
+                                className="block px-2 py-1 hover:bg-accent transition border-b mb-2"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                Challenges Faced on Live Projects
+                              </Link>
+                            </div>
                           </SheetClose>
                         </CollapsibleContent>
                       </Collapsible>
