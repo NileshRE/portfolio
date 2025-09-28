@@ -14,8 +14,8 @@ const HeroSection = () => {
             <Image
               src={`${links.github}.png`}
               alt="Profile"
-              width={200}
-              height={200}
+              width={160}
+              height={160}
               className="rounded-full mx-auto mb-6 border-4 border-primary/20"
             />
           </div>
@@ -25,15 +25,12 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" asChild>
-              <a href="#projects">View My Work</a>
-            </Button>
-            <Button size="lg" variant="secondary" asChild>
               <Link href={links.resume} target="_blank">
                 View Resume
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="#contact">Get In Touch</a>
+            <Button size="lg" asChild variant="outline">
+              <a href="#all-projects">View My Work</a>
             </Button>
           </div>
 

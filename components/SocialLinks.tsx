@@ -16,12 +16,6 @@ import {
 const SocialLinks = () => {
   const items = [
     {
-      href: links.github,
-      label: "View Nilesh's GitHub Profile",
-      icon: <Github className="size-8 text-black dark:text-white" />,
-      shadow: "shadow-[0_0_6px_rgba(255,255,255,0.6)]", // white glow
-    },
-    {
       href: links.linkedin,
       label: "View Nilesh's LinkedIn Profile",
       icon: <Linkedin className="size-8 text-blue-400 dark:text-blue-600" />,
@@ -32,14 +26,6 @@ const SocialLinks = () => {
       label: "Send an Email to Nilesh",
       icon: <Mail className="size-8 text-red-500" />,
       shadow: "shadow-[0_0_6px_rgba(239,68,68,0.6)]", // red glow
-    },
-    {
-      href: links.wordpress,
-      label: "View Blogs written by Nilesh",
-      icon: (
-        <Image src={WordpressLogo} alt="Wordpress-logo" className="size-6" />
-      ),
-      shadow: "shadow-[0_0_6px_rgba(37,99,235,0.6)]", // wordpress blue glow
     },
     {
       href: links.whatsapp,
@@ -58,11 +44,26 @@ const SocialLinks = () => {
       ),
       shadow: "shadow-[0_0_6px_rgba(34,197,94,0.6)]", // green glow
     },
+    {
+      href: links.github,
+      label: "View Nilesh's GitHub Profile",
+      icon: <Github className="size-8 text-black dark:text-white" />,
+      shadow: "shadow-[0_0_6px_rgba(255,255,255,0.6)]", // white glow
+    },
+    {
+      href: links.wordpress,
+      label: "View Blogs written by Nilesh",
+      icon: (
+        <Image src={WordpressLogo} alt="Wordpress-logo" className="size-6" />
+      ),
+      shadow: "shadow-[0_0_6px_rgba(37,99,235,0.6)]", // wordpress blue glow
+    },
   ];
 
   return (
     <TooltipProvider>
-      <div className="flex justify-center space-x-6">
+      <div className="flex justify-center space-x-6 items-center">
+        <span className="inline-block font-semibold">Connect with me:</span>
         {items.map((item, idx) => (
           <Tooltip key={idx}>
             <TooltipTrigger asChild>
