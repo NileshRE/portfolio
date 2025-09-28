@@ -41,12 +41,12 @@ const HeroSection = () => {
             <span className="font-bold">
               Front-End Developer with 2.8+ years
             </span>{" "}
-            of experience in building responsive, high-performance web apps
-            using Next.js, React, Supabase, and Tailwind CSS. Worked on
-            AI-powered platforms by integrating LLM models streams to UI,
-            implemented Razorpay payment gateways, and handled buffer array
-            transformations for rendering content like PDFs. Focused on clean
-            code, scalability, and seamless user experience.
+            of experience building scalable, high-performance web apps using
+            Next.js, React, TypeScript, Tailwind CSS, and Supabase. Optimized
+            load times by 25% and improved Lighthouse scores by 12% while
+            implementing SSR, RBAC, AI features, and dynamic data
+            visualizations. Skilled in API integrations, cross-browser
+            compatibility, and responsive, accessible UI design.
           </p>
           <div className="flex justify-center space-x-6 mt-8">
             <SocialLinks />
