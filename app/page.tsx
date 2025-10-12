@@ -17,9 +17,9 @@ export default function Portfolio() {
       <HeroSection />
       <AboutMeSection />
       <ProjectsSection />
-      <SkillsSection />
-      <CertificateSection />
       <AchievementSection />
+      <CertificateSection />
+      <SkillsSection />
       <Chat />
       <UXSection />
       <ContactSection />

@@ -153,6 +153,8 @@ const certificates = [
 
 const links = {
   github: "https://github.com/NileshRE",
+  codingGH: "https://github.com/NileshRE/Coding_Practice",
+  machineCodGH: "https://github.com/NileshRE/Machine-Coding-Q-s",
   mail: "mailto:19nilesh.kumar@gmail.com",
   linkedin: "https://www.linkedin.com/in/nileshkumar19/",
   wordpress: "https://innilesh87e.wordpress.com/",

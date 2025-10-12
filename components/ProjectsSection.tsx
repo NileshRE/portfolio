@@ -104,10 +104,12 @@ const ProjectsSection = () => {
                       <ul className="list-outside list-disc">
                         {prob?.problems?.map((detail) => (
                           <li key={detail?.title} className="block mb-2">
-                            <span className="font-semibold text-xl my-2 inline-block">
+                            <span className="font-semibold text-lg my-2 inline-block">
                               {detail?.title}:{" "}
                             </span>
-                            {detail?.desc}
+                            <span className="text-muted-foreground inline-block">
+                              {detail?.desc}
+                            </span>
                           </li>
                         ))}
                       </ul>
