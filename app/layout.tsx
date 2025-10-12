@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
@@ -33,7 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={firaCode.variable}>
-      <body className="font-fira">{children}</body>
+      <body className="font-fira">
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
