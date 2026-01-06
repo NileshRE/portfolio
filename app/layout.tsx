@@ -25,6 +25,14 @@ export const metadata: Metadata = {
   twitter: {
     images: ["/images/opengraph-image.png"],
   },
+  keywords: [
+    "Frontend Developer",
+    "Next.js",
+    "React",
+    "JavaScript",
+    "Frontend Engineer",
+    "Portfolio",
+  ],
 };
 
 export default function RootLayout({

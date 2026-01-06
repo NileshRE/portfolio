@@ -35,15 +35,14 @@ const HeroSection = () => {
           </div>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            <span className="font-bold">
-              Front-End Developer with 2.8+ years
-            </span>{" "}
-            of experience building scalable, high-performance web apps using
-            Next.js, React, TypeScript, Tailwind CSS, and Supabase. Optimized
-            load times by 25% and improved Lighthouse scores by 12% while
-            implementing SSR, RBAC, AI features, and dynamic data
-            visualizations. Skilled in API integrations, cross-browser
-            compatibility, and responsive, accessible UI design.
+            <span className="font-bold">Frontend Developer with 3+ years</span>{" "}
+            of experience building scalable, high-performance web applications
+            using React.js and Next.js. I specialize in SSR/SSG, state
+            management, responsive UI, and performance optimization, and have
+            delivered projects handling large datasets, AI-driven features,
+            dashboards, and secure payment workflows. I focus on creating
+            user-friendly, maintainable, and efficient frontends that solve
+            real-world problems.
           </p>
           <div className="flex justify-center space-x-6 mt-8">
             <SocialLinks />

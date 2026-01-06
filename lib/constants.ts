@@ -91,13 +91,14 @@ const projects = [
 const skills = [
   { name: "React", level: 90, category: "Frontend" },
   { name: "Next.js", level: 85, category: "Frontend" },
-  { name: "TypeScript", level: 70, category: "Frontend" },
+  { name: "Angular", level: 50, category: "Frontend" },
   { name: "Tailwind CSS", level: 95, category: "Styling" },
   { name: "Shadcn/UI", level: 90, category: "UI Library" },
   { name: "Ant Design", level: 85, category: "UI Library" },
   { name: "Supabase", level: 80, category: "Backend" },
-  { name: "Git", level: 85, category: "Tools" },
+  { name: "Git", level: 75, category: "Tools" },
   { name: "Jest (Unit Testing)", level: 70, category: "Tools" },
+  { name: "TypeScript", level: 70, category: "Language" },
   { name: "React Native", level: 60, category: "App" },
 ];
 
