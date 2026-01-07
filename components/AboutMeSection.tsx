@@ -5,11 +5,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { experience, links } from "@/lib/constants";
+import { experience } from "@/lib/constants";
 import {
   Activity,
   Code,
   Crosshair,
+  Languages,
   Layers,
   LinkIcon,
   MonitorSmartphone,
@@ -22,8 +23,6 @@ import {
   UserCheck,
   Zap,
 } from "lucide-react";
-import Link from "next/link";
-import { Button } from "./ui/button";
 
 const AboutMeSection = () => {
   const iconClass = "h-5 w-5 text-muted-foreground shrink-0";
@@ -32,8 +31,8 @@ const AboutMeSection = () => {
       <div className="container mx-auto">
         <div className="max-w-5xl mx-auto">
           <h2 className="header2">About Me</h2>
-          <h3 className="text-2xl font-semibold mb-4">Experience</h3>
-          <div className="grid md:grid-cols-2 gap-x-12 items-start">
+          <h3 className="text-2xl font-semibold mb-4">Work Experience</h3>
+          <div className="grid grid-cols-1 gap-x-12 items-start">
             <div className="space-y-6">
               {experience.map((exp, index) => (
                 <Card key={index}>
@@ -46,7 +45,7 @@ const AboutMeSection = () => {
                   <CardContent>
                     {exp?.description?.map((line, index) => (
                       <ul
-                        className="list-disc pl-6 mt-2 text-muted-foreground"
+                        className="list-disc pl-6 mt-6 text-muted-foreground"
                         key={index}
                       >
                         <li key={index} className="mb-1">
@@ -58,7 +57,7 @@ const AboutMeSection = () => {
                 </Card>
               ))}
             </div>
-            <Card className="mt-6 md:mt-0">
+            <Card className="mt-6">
               <CardHeader>
                 <CardTitle className="text-lg"> Practicing the Craft</CardTitle>
               </CardHeader>
@@ -73,7 +72,7 @@ const AboutMeSection = () => {
                 <h2 className="text-base font-medium my-4 text-left">
                   Lessons Learned Along the Way
                 </h2>
-                <div className="grid grid-cols-2 gap-3 items-start mb-6 text-muted-foreground">
+                <div className="grid grid-cols-2 gap-x-4 gap-y-6 items-start mb-6 text-muted-foreground">
                   <div className="flex items-center space-x-2">
                     <Zap className={iconClass} />
                     <span>Performance</span>
@@ -102,11 +101,15 @@ const AboutMeSection = () => {
                     <Crosshair className={iconClass} />
                     <span>Cross Browser Compatibility</span>
                   </div>
+                  <div className="flex items-start space-x-2">
+                    <Languages className={iconClass} />
+                    <span>Multilingual support</span>
+                  </div>
                   <div className="flex items-center space-x-2">
                     <PersonStanding className={iconClass} />
                     <span>Accessibility</span>
                   </div>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-start space-x-2">
                     <Activity className={iconClass} />
                     <span>Logging & Monitoring</span>
                   </div>
@@ -130,29 +133,6 @@ const AboutMeSection = () => {
                     <Speech className={iconClass} />
                     <span>Clear Communicator</span>
                   </div>
-                </div>
-                <h2 className="text-base font-medium my-4 text-left">
-                  See it in Action!
-                </h2>
-                <div className="flex flex-col md:flex-row gap-4 items-center">
-                  <Button size="lg" variant="outline" asChild>
-                    <Link
-                      href={links.codingGH}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Coding Practice
-                    </Link>
-                  </Button>
-                  <Button asChild>
-                    <Link
-                      href={links.machineCodGH}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Machine Coding Practice
-                    </Link>
-                  </Button>
                 </div>
               </CardContent>
             </Card>

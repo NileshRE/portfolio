@@ -108,9 +108,17 @@ const experience = [
     company: "Squareboat",
     period: "Apr 2024 - Present",
     description: [
-      "Led development of multiple Next.js projects having complex UI features and third-party integrations ensuring performance, scalability, and clean UI/UX.",
-      "Collaborated with clients, designers, and backend teams to deliver features on time across mutliple projects.",
-      "Mentored an intern by providing guidance, code reviews, and technical support throughout their first project.",
+      "Owned end-to-end development of multiple Next.js applications, delivering complex UI features and third-party integrations with a strong focus on performance, scalability, and maintainability.",
+      "Improved page load performance by 25% and Core Web Vitals by 12% through SSR/SSG, code-splitting, image optimization, and memoization.",
+      "Built secure subscription and authentication flows with Razorpay, single-session enforcement, and production monitoring using Sentry.",
+      "Optimized rendering of large datasets (25–30k rows) using virtualization and pagination, reducing render timeby 40%.",
+      "Built and maintained internationalized interfaces, including right-to-left (RTL) support for Arabic, handling layout direction, component mirroring, and localization edge cases in Next.js.",
+      "Implemented role-based access control and middleware-driven routing with real-time validations for multi-role platforms.",
+      "Developed advanced dashboards and data tables with URL-synced filters and Recharts visualizations for actionable insights.",
+      "Designed and delivered admin panels (Super Admin/Admin/User) using Shadcn UI, Tailwind, and a Monorepo architecture, improving team productivity by 30%.",
+      "Built AI-driven features including streamed GPT responses, PDF-based insights, vector DB queries, and dynamic graph generation from documents.",
+      "Implemented a Backend-for-Frontend (BFF) layer to render dynamic forms and reduce API payload size by 20%",
+      "Integrated web push notifications using Service Workers and Firebase, improving user re-engagement across supported browsers.",
     ],
   },
   {
@@ -118,9 +126,11 @@ const experience = [
     company: "Capgemini",
     period: "Apr 2021 - Aug 2022",
     description: [
-      "Collaborated within a large team (35–40 members) to resolve client-reported bugs and internal tickets assigned by senior developers.",
-      "Delivered assigned tasks efficiently, earning the Carnival Ninja Award for consistent and timely contributions.",
-      "Provided Knowledge Transfer (KT) sessions to onboard and support new team members in understanding project workflows.",
+      "Designed and built a Calendly-like scheduling feature, enabling availability management, slot booking, conflict prevention, and automated confirmations.",
+      "Recognized with the Carnival Ninja Award for completing high-priority tasks within tight timelines while maintaining quality.",
+      "Managed ticket assignment, monitoring, and resolution workflows for tasks assigned by senior members, ensuring timely delivery across parallel workstreams.",
+      "Collaborated within a 35+ member cross-functional team, coordinating with frontend, backend, QA, and product stakeholders.",
+      "Conducted onboarding and knowledge-transfer (KT) sessions for new joiners as part of team-wide knowledge sharing.",
     ],
   },
 ];
@@ -270,6 +280,15 @@ const projectProblems = [
       {
         title: "Real-Time Graph Rendering from AI Data",
         desc: "Implemented dynamic graph rendering from AI responses in real time. Addressed challenges with error handling, loading states, and inconsistent data to ensure smooth visualization.",
+      },
+    ],
+  },
+  {
+    project: "Qyubic",
+    problems: [
+      {
+        title: "Handling Arabic language and SEO",
+        desc: "Implemented RTL support for Arabic language and handled duplicates pages indexed by setting canonical urls and redirections.",
       },
     ],
   },
