@@ -6,7 +6,8 @@ const Footer = () => {
           N
         </h2>
         <p className="text-muted-foreground">
-          © 2025 Nilesh Kumar. Built with ❤️ — Open for collaboration.
+          © {new Date().getFullYear()} Nilesh Kumar. Built with ❤️ — Open for
+          collaboration.
         </p>
       </div>
     </footer>
