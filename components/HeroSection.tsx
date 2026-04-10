@@ -1,5 +1,5 @@
 "use client";
-import { links } from "@/lib/constants";
+import { heroSectionData, links } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
@@ -35,14 +35,8 @@ const HeroSection = () => {
           </div>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            <span className="font-bold">Frontend Developer with 3+ years</span>{" "}
-            of experience building scalable, high-performance web applications
-            using React.js and Next.js. I specialize in SSR/SSG, state
-            management, responsive UI, and performance optimization, and have
-            delivered projects handling large datasets, AI-driven features,
-            dashboards, and secure payment workflows. I focus on creating
-            user-friendly, maintainable, and efficient frontends that solve
-            real-world problems.
+            <span className="font-bold">{heroSectionData.highlightedText}</span>{" "}
+            {heroSectionData.description}
           </p>
           <div className="flex justify-center space-x-6 mt-8">
             <SocialLinks />

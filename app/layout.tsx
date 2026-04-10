@@ -9,8 +9,9 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.WEBSITE_URL || ""),
   title:
-    "Nilesh Kumar | Frontend Developer Portfolio – React, JavaScript, UI Engineer",
+    "Nilesh Kumar | Frontend Developer Portfolio – React, JavaScript, Zustand, UI Engineer",
   description:
     "Explore the professional portfolio of Nilesh Kumar, a skilled frontend developer specializing in React, JavaScript, and modern UI/UX. View projects, experience, and tech stack expertise.",
   authors: [
@@ -29,6 +30,8 @@ export const metadata: Metadata = {
     "Frontend Developer",
     "Next.js",
     "React",
+    "Zustand",
+    "Redux",
     "JavaScript",
     "Frontend Engineer",
     "Portfolio",

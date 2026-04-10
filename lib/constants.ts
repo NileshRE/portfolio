@@ -1,6 +1,11 @@
 import CouseraLogo from "@/assets/images/coursera.png";
 import NamasteDevLogo from "@/assets/images/namastedev.png";
 
+const heroSectionData = {
+  highlightedText: "Frontend Developer with 3.5+ years",
+  description:
+    "of experience building scalable, high-performance web applications using React.js and Next.js. I specialize in SSR/SSG, state management, responsive UI, and performance optimization, and have delivered projects handling large datasets, AI-driven features, dashboards, and secure payment workflows. I focus on creating user-friendly, maintainable, and efficient frontends that solve real-world problems.",
+};
 const projects = [
   {
     title: "Trading With Vivek",
@@ -92,6 +97,8 @@ const skills = [
   { name: "React", level: 90, category: "Frontend" },
   { name: "Next.js", level: 85, category: "Frontend" },
   { name: "Angular", level: 50, category: "Frontend" },
+  { name: "Redux", level: 80, category: "State Management" },
+  { name: "Zustand", level: 75, category: "State Management" },
   { name: "Tailwind CSS", level: 95, category: "Styling" },
   { name: "Shadcn/UI", level: 90, category: "UI Library" },
   { name: "Ant Design", level: 85, category: "UI Library" },
@@ -104,9 +111,19 @@ const skills = [
 
 const experience = [
   {
+    title: "Software Development Engineer (SDE) - 1",
+    company: "X-35 Innovation Studio Pvt. Ltd.",
+    period: "Feb 2025 - Present",
+    location: "Noida, Uttar Pradesh, India",
+    description: [
+      "Working on lending platform with multi-step onboarding for suppliers and borrowers.",
+    ],
+  },
+  {
     title: "Frontend Engineer",
     company: "Squareboat",
-    period: "Apr 2024 - Present",
+    period: "Apr 2024 - Jan 2025",
+    location: "Gurugram, Haryana, India",
     description: [
       "Owned end-to-end development of multiple Next.js applications, delivering complex UI features and third-party integrations with a strong focus on performance, scalability, and maintainability.",
       "Improved page load performance by 25% and Core Web Vitals by 12% through SSR/SSG, code-splitting, image optimization, and memoization.",
@@ -122,9 +139,10 @@ const experience = [
     ],
   },
   {
-    title: "Software Engineer",
+    title: "Software Engineer / Analyst",
     company: "Capgemini",
     period: "Apr 2021 - Aug 2022",
+    location: "Navi Mumbai, Maharashtra, India",
     description: [
       "Designed and built a Calendly-like scheduling feature, enabling availability management, slot booking, conflict prevention, and automated confirmations.",
       "Recognized with the Carnival Ninja Award for completing high-priority tasks within tight timelines while maintaining quality.",
@@ -288,7 +306,7 @@ const projectProblems = [
     problems: [
       {
         title: "Handling Arabic language and SEO",
-        desc: "Implemented RTL support for Arabic language and handled duplicates pages indexed by setting canonical urls and redirections.",
+        desc: "Implemented RTL support for Arabic language and handled duplicates pages indexed by setting canonical urls and redirections. Handled country-based content variations using query parameters and dynamic rendering to ensure accurate content delivery.",
       },
     ],
   },
@@ -297,6 +315,7 @@ const projectProblems = [
 export {
   certificates,
   experience,
+  heroSectionData,
   links,
   NavLink,
   navLinks,
