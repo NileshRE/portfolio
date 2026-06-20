@@ -113,16 +113,18 @@ const experience = [
   {
     title: "Software Development Engineer (SDE) - 1",
     company: "X-35 Innovation Studio Pvt. Ltd.",
-    period: "Feb 2025 - Present",
+    period: "Feb 2026 - Present",
     location: "Noida, Uttar Pradesh, India",
     description: [
       "Working on lending platform with multi-step onboarding for suppliers and borrowers.",
+      "Developed a configuration platform for Android and iOS applications, enabling dynamic management of colors, dimensions, component visibility, and UI positioning without requiring app updates.",
+      "Built an Angular-based workflow editor using JointJS for drag-and-drop workflow creation and editing.",
     ],
   },
   {
     title: "Frontend Engineer",
     company: "Squareboat",
-    period: "Apr 2024 - Jan 2025",
+    period: "Apr 2024 - Jan 2026",
     location: "Gurugram, Haryana, India",
     description: [
       "Owned end-to-end development of multiple Next.js applications, delivering complex UI features and third-party integrations with a strong focus on performance, scalability, and maintainability.",
