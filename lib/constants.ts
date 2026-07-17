@@ -117,7 +117,7 @@ const experience = [
     location: "Noida, Uttar Pradesh, India",
     description: [
       "Working on lending platform with multi-step onboarding for suppliers and borrowers.",
-      "Developed a configuration platform for Android and iOS applications, enabling dynamic management of colors, dimensions, component visibility, and UI positioning without requiring app updates.",
+      "Architected a low-code cross-platform SDK configuration system that exports Android resource files (colors, dimens, booleans, strings) and iOS plist configurations, with validation, live preview, and platform consistency checks to streamline SDK customization and reduce integration effort.",
       "Built an Angular-based workflow editor using JointJS for drag-and-drop workflow creation and editing.",
     ],
   },
